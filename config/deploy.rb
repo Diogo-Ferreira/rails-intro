@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock "3.8.0"
 
-set :application, "rails_intro"
+set :application, "rails-intro"
 set :repo_url, "git@github.com:Diogo-Ferreira/rails-intro.git"
 set :branch, "the-end"
 
@@ -9,7 +9,9 @@ set :branch, "the-end"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "home/diogo/www/rails-intro"
+set :deploy_to, "/home/diogo/www/rails-intro/"
+
+set :format, :airbrussh
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
